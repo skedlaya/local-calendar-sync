@@ -1,14 +1,10 @@
-# gt-local-calendar-sync
+# local-calendar-sync
 A simple calendar syncing system that keeps a local cache of calendar events that sync to Google Calendar API.
 
-Devise and implement a simple cache system that allows an endpoint that serves a list of calendar events from a logged in user's Google calendar while limiting the number of API hits to Google Calendar by holding a local cache of events.
+The cache is persistant beyond server restarts.
+The response of GET request returns JSON.
 
-## Guidelines
-1. The cache can be built in any way you see fit as long as it persistants beyond server restarts.
-2. Response of GET request should return JSON
-
-## Requirements
-The server should respond to the following request via JSON in the format of the sample output below
+The server should responds to the following request via JSON in the format of the sample output below
 ### GET /
 * Redirects to /calendar-events
 
